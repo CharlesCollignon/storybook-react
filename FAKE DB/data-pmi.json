@@ -1,0 +1,17 @@
+{
+  "lastUpdate": "Jun 30 2021 02:00:00",
+  "countries": {
+    "gm-fr": {
+      "country": "France",
+      "daily": { "value": 60.2658, "yty": 0.2828 },
+      "monthly": { "value": 68.4226, "yty": 0.7265 },
+      "info": { "base": "Jul 06, 2012" }
+    },
+    "gm-de": {
+      "country": "Germany",
+      "daily": { "value": 63.0113, "yty": 0.3839 },
+      "monthly": { "value": 65.0444, "yty": 0.6313 },
+      "info": { "base": "Jul 06, 2012" }
+    }
+  }
+}
