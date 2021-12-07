@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
@@ -11,17 +11,16 @@ type LinechartProps = {
 };
 
 const Linechart = (props: LinechartProps) => {
-  const { title, width, height, series } = props;
   const options = {
     title: {
-      text: title,
+      text: props.title,
     },
     chart: {
-      width: width,
-      height: height,
+      width: props.width,
+      height: props.height,
     },
 
-    series: series,
+    series: props.series,
   };
   return (
     <HighchartsReact
@@ -31,11 +30,11 @@ const Linechart = (props: LinechartProps) => {
     />
   );
 };
-Linechart.propTypes = {
-  title: PropTypes.string,
-  width: PropTypes.number,
-  height: PropTypes.number,
-  series: PropTypes.array,
-};
+// Linechart.propTypes = {
+//   title: PropTypes.string,
+//   width: PropTypes.number,
+//   height: PropTypes.number,
+//   series: PropTypes.array,
+// };
 
 export default Linechart;
