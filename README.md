@@ -37,7 +37,7 @@ Add a folder (CamelCase convention), for exemple :
 
 `src/index.ts`\
 `export * from "./components"; `\
-`export * from "./modules";`\
+`export * from "./modules";`
 
 This should be like this :
 
@@ -58,15 +58,15 @@ This should be like this :
 When a change is done, there are **5 steps** to do :
 
 1. Update the version inside **package.json** (following the [semantic versioning](https://docs.npmjs.com/about-semantic-versioning))\
-   `"version": "1.0.13" --> "version": 1.0.14"`\
+   `"version": "1.0.13" --> "version": 1.0.14"`
 2. Commit and push the changes on **GitHub** or **BitBucket**\
    `git add all`\
    `git commit -m 'added component'`\
-   `git push ...`\
+   `git push ...`
 3. Run the bundler Rollup\
-   `npm run rollup`\
+   `npm run rollup`
 4. Publish the package\
-   `npm publish`\
+   `npm publish`
 5. Finally update the version inside your project **package.json** and re-run\
    `npm install`
 
