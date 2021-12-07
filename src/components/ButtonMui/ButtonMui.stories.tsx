@@ -14,18 +14,18 @@ const Template: ComponentStory<typeof ButtonMui> = (args) => (
 
 export const VariantOne = Template.bind({});
 VariantOne.args = {
-  text: "Je suis un Bouton MUI",
+  text: "Text Button",
   variantStyle: "text",
 };
 
 export const VariantTwo = Template.bind({});
 VariantTwo.args = {
-  text: "Je suis un Bouton MUI",
+  text: "Contained Button",
   variantStyle: "contained",
 };
 
 export const VariantThree = Template.bind({});
 VariantThree.args = {
-  text: "Je suis un Bouton MUI",
+  text: "Outlined Button",
   variantStyle: "outlined",
 };
