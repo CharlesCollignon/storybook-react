@@ -5,7 +5,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import Linechart from "./Linechart";
 
 export default {
-  title: "Charts/LineChart",
+  title: "Charts/Linechart",
   component: Linechart,
 } as ComponentMeta<typeof Linechart>;
 
@@ -15,7 +15,6 @@ const Template: ComponentStory<typeof Linechart> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  // More on composing args: https://storybook.js.org/docs/react/writing-stories/args#args-composition
   title: "My stock chart",
   width: 900,
   height: 450,
