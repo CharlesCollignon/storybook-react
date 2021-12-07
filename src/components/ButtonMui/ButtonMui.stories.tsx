@@ -15,17 +15,17 @@ const Template: ComponentStory<typeof ButtonMui> = (args) => (
 export const VariantOne = Template.bind({});
 VariantOne.args = {
   text: "Je suis un Bouton MUI",
-  variant: "text",
+  variantStyle: "text",
 };
 
 export const VariantTwo = Template.bind({});
 VariantTwo.args = {
   text: "Je suis un Bouton MUI",
-  variant: "contained",
+  variantStyle: "contained",
 };
 
 export const VariantThree = Template.bind({});
 VariantThree.args = {
   text: "Je suis un Bouton MUI",
-  variant: "outlined",
+  variantStyle: "outlined",
 };
