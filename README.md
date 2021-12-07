@@ -29,15 +29,15 @@ Add a folder (CamelCase convention), for exemple :
 
 2. Inside the src/components folder you must have an **index.ts** to export each component inside :
 
-   `export { default as Button } from "./Button"`
-   `export { default as ButtonVariant } from "./ButtonVariant"`
+   `export { default as Button } from "./Button"`\
+   `export { default as ButtonVariant } from "./ButtonVariant"`\
    ...etc
 
 3. Finally if there are more type of component folders (like components, modules, templates, etc) inside the **srx/**. You must hava a last **index.ts** inside **src/**
 
-`src/index.ts`
-`export * from "./components"; `
-`export * from "./modules";`
+`src/index.ts`\
+`export * from "./components"; `\
+`export * from "./modules";`\
 
 This should be like this :
 
@@ -57,22 +57,22 @@ This should be like this :
 
 When a change is done, there are **5 steps** to do :
 
-1. Update the version inside **package.json** (following the [semantic versioning](https://docs.npmjs.com/about-semantic-versioning))
-   `"version": "1.0.13" --> "version": 1.0.14"`
-2. Commit and push the changes on **GitHub** or **BitBucket**
-   `git add all`
-   `git commit -m 'added component'`
-   `git push ...`
-3. Run the bundler Rollup
-   `npm run rollup`
-4. Publish the package
-   `npm publish`
-5. Finally update the version inside your project **package.json** and re-run
+1. Update the version inside **package.json** (following the [semantic versioning](https://docs.npmjs.com/about-semantic-versioning))\
+   `"version": "1.0.13" --> "version": 1.0.14"`\
+2. Commit and push the changes on **GitHub** or **BitBucket**\
+   `git add all`\
+   `git commit -m 'added component'`\
+   `git push ...`\
+3. Run the bundler Rollup\
+   `npm run rollup`\
+4. Publish the package\
+   `npm publish`\
+5. Finally update the version inside your project **package.json** and re-run\
    `npm install`
 
 ### Use the design system
 
-To use the design system, you just have to install the package like any npm package :
-`npm install @Your_Github_Name/Your_repo_name`
-Then import the component you need in the App
+To use the design system, you just have to install the package like any npm package :\
+`npm install @Your_Github_Name/Your_repo_name`\
+Then import the component you need in the App :\
 `import { Button } from '@Your_Github_Name/Your_repo_name`
