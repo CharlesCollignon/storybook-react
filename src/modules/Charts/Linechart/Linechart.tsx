@@ -3,12 +3,12 @@ import React from "react";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
-type LinechartProps = {
+interface LinechartProps {
   title: string;
   width: number;
   height: number;
   series: any;
-};
+}
 
 const Linechart = (props: LinechartProps) => {
   const options = {
