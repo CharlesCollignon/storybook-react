@@ -1,6 +1,6 @@
 {
   "name": "@CharlesCollignon/storybook-react",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "React library",
   "scripts": {
     "rollup": "rollup -c",
